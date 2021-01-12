@@ -19,6 +19,9 @@ print(mio_file.name)
 print(mio_file.get_data())
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f8000b3ff3dd57c5b058889892e7579568cae2cd
+=======
+>>>>>>> origin/main

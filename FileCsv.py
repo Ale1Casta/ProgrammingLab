@@ -10,7 +10,11 @@ class CSVFile:
         self.name = name
 
 
+<<<<<<< HEAD
     def get_data(self, start=None, end=None):
+=======
+    def get_data(self):
+>>>>>>> f8000b3ff3dd57c5b058889892e7579568cae2cd
 
         # Inizializzo una lista vuota per salvare i valori
         values = []
@@ -18,7 +22,12 @@ class CSVFile:
         # Provo ad aprire il file per estrarci i dati. Se non ci riesco, prima avverto del'errore, 
         # poi devo abortire. Questo e' un errore "un-recoverable", ovvero non posso proseguire con
         # la lettura dei dati se non riesco ad aprire il file!
+<<<<<<< HEAD
         try: my_file = open(self.name, 'r')
+=======
+        try:
+            my_file = open(self.name, 'r')
+>>>>>>> f8000b3ff3dd57c5b058889892e7579568cae2cd
         except Exception as e:
             
             # Stampo l'errore
@@ -60,6 +69,7 @@ class CSVFile:
         my_file.close()
         
         # Quando ho processato tutte le righe, ritorno i valori
+<<<<<<< HEAD
         if (start==None and end==None):
             return values
         elif(start>end or start<1):
@@ -70,6 +80,11 @@ class CSVFile:
             except Exception as e:
                 print(e)
 
+=======
+        return values
+    
+        
+>>>>>>> f8000b3ff3dd57c5b058889892e7579568cae2cd
 #======================
 # Corpo del programma
 #======================
@@ -77,5 +92,9 @@ class CSVFile:
 mio_file = CSVFile(name='shampoo_sales.csv')
 
 print('Nome del file: "{}"'.format(mio_file.name))
+<<<<<<< HEAD
 print(mio_file.get_data(2,5))
+=======
+print('Dati contenuti nel file: "{}"'.format(mio_file.get_data()))
+>>>>>>> f8000b3ff3dd57c5b058889892e7579568cae2cd
 

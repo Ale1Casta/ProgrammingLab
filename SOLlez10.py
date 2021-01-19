@@ -26,7 +26,7 @@ class Model(object):
 
 
 # Questo e' il modello di lezione 8 - ovvero quello senza il fit. Ci sono un po' di "print" sparsi qua e la' ed
-# ora commentati, che ho usato io stesso per correggere alcuni bug e capire meglio come stafa funzionando il tutto.
+# ora commentati, che ho usato io stesso per correggere alcuni bug e capire meglio come stava funzionando il tutto.
 
 class IncrementModel(Model):
 
